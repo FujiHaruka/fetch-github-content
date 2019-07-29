@@ -1,27 +1,29 @@
 {
   "name": "fetch-github-content",
   "version": "1.2.0",
-  "description": "",
-  "main": "lib/fetchGhContent",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FujiHaruka/fetch-github-content.git"
-  },
-  "keywords": [
-    "GitHub"
-  ],
   "author": "FujiHaruka",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FujiHaruka/fetch-github-content/issues"
   },
-  "homepage": "https://github.com/FujiHaruka/fetch-github-content#readme",
   "dependencies": {
     "base-64": "^0.1.0",
     "node-fetch": "^2.6.0",
     "utf8": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "homepage": "https://github.com/FujiHaruka/fetch-github-content#readme",
+  "keywords": [
+    "GitHub"
+  ],
+  "license": "MIT",
+  "main": "lib/fetchGhContent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FujiHaruka/fetch-github-content.git"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
