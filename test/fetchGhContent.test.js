@@ -24,4 +24,11 @@ describe('fetchGhContent', function() {
     })
     assert.equal(pkg.name, 'fetch-github-content')
   })
+
+  it('throws error if required fields are lack', async () => {
+    await assert.rejects(() => fetchGhContent({
+      owner: 'FujiHaruka',
+      repo: 'fetch-github-content',
+    }))
+  })
 })
