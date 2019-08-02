@@ -6,7 +6,6 @@
     "url": "https://github.com/FujiHaruka/fetch-github-content/issues"
   },
   "dependencies": {
-    "base-64": "^0.1.0",
     "node-fetch": "^2.6.0",
     "utf8": "^3.0.0"
   },
