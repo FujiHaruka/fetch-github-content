@@ -16,13 +16,23 @@ describe('fetchGhContent', function() {
   })
 
   it('json option', async () => {
-    const pkg = await fetchGhContent({
+    const json = await fetchGhContent({
       owner: 'FujiHaruka',
       repo: 'fetch-github-content',
-      path: 'package.json',
+      path: 'test/data/foo.json',
       json: true,
     })
-    assert.equal(pkg.name, 'fetch-github-content')
+    assert.equal(json.name, 'fetch-github-content')
+  })
+
+  it('unicode', async () => {
+    const json = await fetchGhContent({
+      owner: 'FujiHaruka',
+      repo: 'fetch-github-content',
+      path: 'test/data/unicode.json',
+      json: true,
+    })
+    assert.equal(json.name, 'ユニコードにも対応する')
   })
 
   it('throws error if required fields are lack', async () => {
