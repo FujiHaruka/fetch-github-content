@@ -6,7 +6,7 @@
     "url": "https://github.com/FujiHaruka/fetch-github-content/issues"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "mocha": "^6.2.0"
